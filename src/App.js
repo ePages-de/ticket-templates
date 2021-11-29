@@ -16,8 +16,7 @@ function App() {
   };
   
   const createStoryTicket = () => {
-    setValue(`
-### Context
+    setValue(`### Context
 
 ### Scenario
 
@@ -52,6 +51,12 @@ function App() {
       alert(mdEditor.current.getMdValue());
     }
   };
+  
+  const handleEditorChange = ({ html, text }) => {
+    const newValue = text.replace(/\d/g, "");
+    console.log(newValue);
+    setValue(newValue);
+  };
 
   return (
     <div className="App">
@@ -65,6 +70,7 @@ function App() {
         style={{
           height: "500px"
         }}
+        onChange={handleEditorChange}
         renderHTML={text => <ReactMarkdown source={text} />}
       />
       <button onClick={handleClick}>Get value</button>
