@@ -14,25 +14,60 @@ function App() {
       alert(mdEditor.current.getMdValue());
     }
   };
+  
+  const createStoryTicket = () => {
+    setValue(`
+### Context
 
-  const handleEditorChange = ({ html, text }) => {
-    const newValue = text.replace(/\d/g, "");
-    console.log(newValue);
-    setValue(newValue);
+### Scenario
+
+**Given** 
+
+**When**
+
+**Then** 
+
+### UX concept
+
+
+
+### Acceptance criteria
+
+
+
+### Implementation hints
+
+
+      `);
+  };
+  
+  const createApiTicket = () => {
+    if (mdEditor.current) {
+      alert(mdEditor.current.getMdValue());
+    }
+  };
+  
+  const createBugTicket = () => {
+    if (mdEditor.current) {
+      alert(mdEditor.current.getMdValue());
+    }
   };
 
   return (
     <div className="App">
-      <button onClick={handleClick}>Get value</button>
+      <button onClick={createStoryTicket}>Story</button>
+      <button onClick={createApiTicket}>API</button>
+      <button onClick={createBugTicket}>Bug</button>
+      
       <Editor
         ref={mdEditor}
         value={value}
         style={{
           height: "500px"
         }}
-        onChange={handleEditorChange}
         renderHTML={text => <ReactMarkdown source={text} />}
       />
+      <button onClick={handleClick}>Get value</button>
     </div>
   );
 }
