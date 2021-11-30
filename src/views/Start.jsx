@@ -17,13 +17,37 @@ function Start() {
       <header className="masthead">
         <div className="container px-5">
           <div className="row gx-5 align-items-center">
-            <div className="col-lg-12">
-              <ul>
-                <li><Link to="/story">Story</Link></li>
-                <li><Link to="/api">API</Link></li>
-                <li><Link to="/bug">Bug</Link></li>
-              </ul>
+    
+            <div>
+              <Link to="/story">
+                <div className="tile blue">
+                  <h3 className="title"><i className="bi bi-file-text"></i>
+                    Story
+                  </h3>
+                </div>
+              </Link>
             </div>
+        
+            <div>
+              <Link to="/bug">
+                <div className="tile blue">
+                  <h3 className="title"><i className="bi bi-file-text"></i>
+                    Bug
+                  </h3>
+                </div>
+              </Link>
+            </div>
+            
+            <div>
+              <Link to="/api">
+                <div className="tile blue">
+                  <h3 className="title"><i className="bi bi-file-text"></i>
+                    API
+                  </h3>
+                </div>
+              </Link>
+            </div>
+            
           </div>
         </div>
       </header>
