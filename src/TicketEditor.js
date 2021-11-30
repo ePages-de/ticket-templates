@@ -5,7 +5,7 @@ import "react-markdown-editor-lite/lib/index.css";
 
 import "./App.css"
 
-function App() {
+function TicketEditor() {
   const mdEditor = React.useRef(null);
   const [value, setValue] = React.useState();
 
@@ -79,4 +79,4 @@ function App() {
   );
 }
 
-export default App;
+export default TicketEditor;
