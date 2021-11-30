@@ -2,3 +2,11 @@
   padding-top: 0px;
   padding-bottom: 0px;
 }
+
+div input {
+  margin-bottom: 20px !IMPORTANT;
+}
+
+div.placeholder {
+  height: 100px;
+}

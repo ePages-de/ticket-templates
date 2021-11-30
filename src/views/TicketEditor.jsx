@@ -67,13 +67,17 @@ function TicketEditor() {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div className="container px-5">
-          <h1>Story template</h1>
+          <h1>Story ticket</h1>
         </div>
       </nav>
       
       <header className="masthead">
         <div className="container px-5">
           <div className="row gx-5 align-items-center">
+    
+            <div>
+              <input class="form-control form-control-lg" type="text" placeholder="Story ticket title" />
+            </div>
     
             <div className="editor">
               <Editor
@@ -92,6 +96,8 @@ function TicketEditor() {
           </div>
         </div>
       </header>
+      
+      <div className="placeholder" />
       
       <div className="fixedFooter">
         <Footer />
