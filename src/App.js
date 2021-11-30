@@ -7,7 +7,7 @@ import "./App.css"
 
 function App() {
   const mdEditor = React.useRef(null);
-  const [value, setValue] = React.useState("xxx");
+  const [value, setValue] = React.useState();
 
   const handleClick = () => {
     if (mdEditor.current) {
@@ -17,6 +17,8 @@ function App() {
   
   const createStoryTicket = () => {
     setValue(`### Context
+
+
 
 ### Scenario
 
@@ -28,7 +30,7 @@ function App() {
 
 ### UX concept
 
-
+![Your screenshot here]()
 
 ### Acceptance criteria
 
@@ -60,20 +62,19 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={createStoryTicket}>Story</button>
-      <button onClick={createApiTicket}>API</button>
-      <button onClick={createBugTicket}>Bug</button>
       
+      <button onClick={handleClick}>Copy to clipboard</button>
       <Editor
         ref={mdEditor}
         value={value}
         style={{
           height: "500px"
         }}
+        view={{html: false}}
         onChange={handleEditorChange}
         renderHTML={text => <ReactMarkdown source={text} />}
       />
-      <button onClick={handleClick}>Get value</button>
+      
     </div>
   );
 }
