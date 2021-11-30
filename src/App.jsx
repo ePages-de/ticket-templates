@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import TicketEditor from './TicketEditor';
-import Start from './Start';
+import TicketEditor from './views/TicketEditor';
+import Start from './views/Start';
 
 function App() {
   

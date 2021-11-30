@@ -3,7 +3,7 @@ import Editor from "react-markdown-editor-lite";
 import ReactMarkdown from "react-markdown";
 import "react-markdown-editor-lite/lib/index.css";
 
-import "./App.css"
+import "../App.css"
 
 function TicketEditor() {
   const mdEditor = React.useRef(null);
