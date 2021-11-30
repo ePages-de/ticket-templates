@@ -21,7 +21,7 @@ function Start() {
             <div>
               <Link to="/story">
                 <div className="tile blue">
-                  <h3 className="title"><i className="bi bi-file-text"></i>
+                  <h3 className="title"><i className="bi bi-book"></i>
                     Story
                   </h3>
                 </div>
@@ -31,7 +31,7 @@ function Start() {
             <div>
               <Link to="/bug">
                 <div className="tile blue">
-                  <h3 className="title"><i className="bi bi-file-text"></i>
+                  <h3 className="title"><i className="bi bi-bug"></i>
                     Bug
                   </h3>
                 </div>
@@ -41,7 +41,7 @@ function Start() {
             <div>
               <Link to="/api">
                 <div className="tile blue">
-                  <h3 className="title"><i className="bi bi-file-text"></i>
+                  <h3 className="title"><i className="bi bi-code-slash"></i>
                     API
                   </h3>
                 </div>
