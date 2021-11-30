@@ -13,6 +13,7 @@ function App() {
           <Route path='/story' element={<TicketEditor />}/>
           <Route path='/api' element={<TicketEditor />}/>
           <Route path='/bug' element={<TicketEditor />}/>
+          <Route path='/task' element={<TicketEditor />}/>
         </Routes>
       </HashRouter>
     </main>    

@@ -48,6 +48,16 @@ function Start() {
               </Link>
             </div>
             
+            <div>
+              <Link to="/task">
+                <div className="tile blue">
+                  <h3 className="title"><i className="bi bi-list-check"></i>
+                    Task
+                  </h3>
+                </div>
+              </Link>
+            </div>
+            
           </div>
         </div>
       </header>
