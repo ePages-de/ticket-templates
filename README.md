@@ -32,6 +32,20 @@ Then, the app will be accessible at http://localhost:3000 .
 
 To update the text for the templates, edit the Markdown files in [`src/templates`](./src/templates).
 
+### Linting
+
+Run the `fix` task for cleaning up the import sort order etc.
+
+```
+npm run fix
+```
+
+Run the `lint` task for finding code style issues before doing a pull request.
+
+```
+npm run lint
+```
+
 ## Deployment
 
 ### Publish to GitHub Pages
