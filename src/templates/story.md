@@ -1,12 +1,12 @@
 ### Context
 
-[comment]: <> (What someone who was not involved originally needs to know about the context of this ticket?)
+[comment]: <> (What someone who was not involved in the subject yet needs to know about the context of this ticket?)
 
 ### Scenario
 
 **Given** 
 
-**When**
+**When** 
 
 **Then** 
 

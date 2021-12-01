@@ -25,7 +25,7 @@ function TicketEditor(props) {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div className="container px-5">
-          <h1>Story ticket</h1>
+          <h1>{props.type} ticket template</h1>
         </div>
       </nav>
       
@@ -34,7 +34,7 @@ function TicketEditor(props) {
           <div className="row gx-5 align-items-center">
     
             <div>
-              <input class="form-control form-control-lg" type="text" placeholder="Story ticket title" />
+              <input class="form-control form-control-lg" type="text" placeholder={"Enter the title for the " + props.type + " ticket here..." } />
             </div>
     
             <div className="editor">
