@@ -20,7 +20,7 @@
   "scripts": {
     "start": "BROWSER=none react-scripts start",
     "build": "CI=false react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --passWithNoTests",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build -r git@github.com:ePages-de/ticket-templates.git",
     "lint": "npx eslint \"src/**/*.{js,jsx}\"",
