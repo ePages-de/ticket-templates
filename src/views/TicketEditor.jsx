@@ -11,11 +11,13 @@ function TicketEditor(props) {
   const mdEditor = React.useRef(null);
   const [value, setValue] = React.useState();
   
-  fetch(props.template)
-    .then((response) => response.text())
-    .then((textContent) => {
-      setValue(textContent);
-    });
+  React.useEffect(async () => {
+    fetch(props.template)
+      .then((response) => response.text())
+      .then((textContent) => {
+        setValue(textContent);
+      });
+  }, []);
   
   const handleEditorChange = ({ html, text }) => { // eslint-disable-line no-unused-vars
     const newValue = text.replace(/\d/g, "");
