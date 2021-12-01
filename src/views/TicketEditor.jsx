@@ -20,8 +20,7 @@ function TicketEditor(props) {
   }, []);
   
   const handleEditorChange = ({ html, text }) => { // eslint-disable-line no-unused-vars
-    const newValue = text.replace(/\d/g, "");
-    setValue(newValue);
+    setValue(text);
   };
 
   return (
