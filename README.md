@@ -21,7 +21,7 @@ To start the development server, clone the repository, install the dependencies,
 ```shell
 git clone git@github.com:ePages-de/ticket-templates.git
 # https://github.com/ePages-de/ticket-templates.git
-cd google-app
+cd ticket-templates
 npm install
 npm start
 ```
