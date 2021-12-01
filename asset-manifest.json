@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ticket-templates/static/css/main.f23afded.chunk.css",
+    "main.js": "/ticket-templates/static/js/main.100806b6.chunk.js",
+    "main.js.map": "/ticket-templates/static/js/main.100806b6.chunk.js.map",
+    "runtime-main.js": "/ticket-templates/static/js/runtime-main.9fa6ca02.js",
+    "runtime-main.js.map": "/ticket-templates/static/js/runtime-main.9fa6ca02.js.map",
+    "static/css/2.b5d8bd9a.chunk.css": "/ticket-templates/static/css/2.b5d8bd9a.chunk.css",
+    "static/js/2.f028fe54.chunk.js": "/ticket-templates/static/js/2.f028fe54.chunk.js",
+    "static/js/2.f028fe54.chunk.js.map": "/ticket-templates/static/js/2.f028fe54.chunk.js.map",
+    "index.html": "/ticket-templates/index.html",
+    "static/css/2.b5d8bd9a.chunk.css.map": "/ticket-templates/static/css/2.b5d8bd9a.chunk.css.map",
+    "static/css/main.f23afded.chunk.css.map": "/ticket-templates/static/css/main.f23afded.chunk.css.map",
+    "static/js/2.f028fe54.chunk.js.LICENSE.txt": "/ticket-templates/static/js/2.f028fe54.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9fa6ca02.js",
+    "static/css/2.b5d8bd9a.chunk.css",
+    "static/js/2.f028fe54.chunk.js",
+    "static/css/main.f23afded.chunk.css",
+    "static/js/main.100806b6.chunk.js"
+  ]
+}
