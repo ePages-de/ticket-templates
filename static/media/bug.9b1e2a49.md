@@ -1,6 +1,6 @@
 ### Observed result
 
-[comment]: <> (What did you see? (Bonus points for an annotated screenshot.)
+[comment]: <> (Describe what you are seeing - Bonus points for an annotated screenshot.)
 
 ### Expected result
 
