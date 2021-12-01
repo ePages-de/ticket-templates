@@ -6,60 +6,18 @@ import './TicketEditor.css';
 import "react-markdown-editor-lite/lib/index.css";
 import Footer from '../components/Footer';
 
-
-
-function TicketEditor() {
+function TicketEditor(props) {
   const mdEditor = React.useRef(null);
-  const [value, setValue] = React.useState("Hello");
-
-  const handleClick = () => {
-    if (mdEditor.current) {
-      alert(mdEditor.current.getMdValue());
-    }
-  };
+  const [value, setValue] = React.useState();
   
-  const createStoryTicket = () => {
-    setValue(`### Context
-
-
-
-### Scenario
-
-**Given** 
-
-**When**
-
-**Then** 
-
-### UX concept
-
-![Your screenshot here]()
-
-### Acceptance criteria
-
-
-
-### Implementation hints
-
-
-      `);
-  };
-  
-  const createApiTicket = () => {
-    if (mdEditor.current) {
-      alert(mdEditor.current.getMdValue());
-    }
-  };
-  
-  const createBugTicket = () => {
-    if (mdEditor.current) {
-      alert(mdEditor.current.getMdValue());
-    }
-  };
+  fetch(props.template)
+    .then((response) => response.text())
+    .then((textContent) => {
+      setValue(textContent);
+    });
   
   const handleEditorChange = ({ html, text }) => {
     const newValue = text.replace(/\d/g, "");
-    console.log(newValue);
     setValue(newValue);
   };
 

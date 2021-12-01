@@ -3,6 +3,12 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 import TicketEditor from './views/TicketEditor';
 import Start from './views/Start';
 
+import apiTicketTemplate from './templates/api.md'
+import bugTicketTemplate from './templates/bug.md'
+import storyTicketTemplate from './templates/story.md'
+import taskTicketTemplate from './templates/task.md'
+
+
 function App() {
   
   return (
@@ -10,10 +16,10 @@ function App() {
       <HashRouter>
         <Routes>
           <Route exact path='/' element={<Start />}/>
-          <Route path='/story' element={<TicketEditor />}/>
-          <Route path='/api' element={<TicketEditor />}/>
-          <Route path='/bug' element={<TicketEditor />}/>
-          <Route path='/task' element={<TicketEditor />}/>
+          <Route path='/story' element={<TicketEditor type='Story' template={storyTicketTemplate} />}/>
+          <Route path='/api' element={<TicketEditor type='API' template={apiTicketTemplate} />}/>
+          <Route path='/bug' element={<TicketEditor type='Bug' template={bugTicketTemplate} />}/>
+          <Route path='/task' element={<TicketEditor type='Task' template={taskTicketTemplate} />}/>
         </Routes>
       </HashRouter>
     </main>    
