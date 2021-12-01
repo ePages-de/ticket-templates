@@ -1,12 +1,12 @@
 import React from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
-import TicketEditor from './views/TicketEditor';
-import Start from './views/Start';
 
 import apiTicketTemplate from './templates/api.md'
 import bugTicketTemplate from './templates/bug.md'
 import storyTicketTemplate from './templates/story.md'
 import taskTicketTemplate from './templates/task.md'
+import Start from './views/Start';
+import TicketEditor from './views/TicketEditor';
 
 
 function App() {

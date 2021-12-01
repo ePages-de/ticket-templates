@@ -1,9 +1,10 @@
-import React from "react";
-import Editor from "react-markdown-editor-lite";
-import ReactMarkdown from "react-markdown";
-
 import './TicketEditor.css';
-import "react-markdown-editor-lite/lib/index.css";
+import 'react-markdown-editor-lite/lib/index.css';
+
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import Editor from 'react-markdown-editor-lite';
+
 import Footer from '../components/Footer';
 
 function TicketEditor(props) {
@@ -16,7 +17,7 @@ function TicketEditor(props) {
       setValue(textContent);
     });
   
-  const handleEditorChange = ({ html, text }) => {
+  const handleEditorChange = ({ html, text }) => { // eslint-disable-line no-unused-vars
     const newValue = text.replace(/\d/g, "");
     setValue(newValue);
   };
@@ -34,7 +35,7 @@ function TicketEditor(props) {
           <div className="row gx-5 align-items-center">
     
             <div>
-              <input class="form-control form-control-lg" type="text" placeholder={"Enter the title for the " + props.type + " ticket here..." } />
+              <input className="form-control form-control-lg" type="text" placeholder={"Enter the title for the " + props.type + " ticket here..." } />
             </div>
     
             <div className="editor">
